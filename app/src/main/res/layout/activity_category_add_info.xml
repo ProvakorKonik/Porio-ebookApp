@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryAddInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/cat_add_image"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#222d"/>
+
+                <EditText
+                    android:id="@+id/edit_cat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_cat_add_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Type"
+                    android:text="ENG"
+                    android:layout_marginTop="15dp"
+                    android:inputType="textCapSentences"
+                    />
+                <EditText
+                    android:id="@+id/edit_cat_add_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Priority"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/edit_cat_add_total_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Total Data"
+                    android:text="0V0F0A0B0C0D"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/cat_add_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/radio_academic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Academic"
+                            android:layout_marginRight="10dp"/>
+                        <RadioButton android:id="@+id/radio_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User's"
+                            android:layout_marginLeft="10dp"/>
+                        <RadioButton android:id="@+id/radio_published"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Publish"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cat_update_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+
+                    android:paddingHorizontal="50dp"
+                    android:text="UPDATE" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

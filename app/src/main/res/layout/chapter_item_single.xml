@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/cardview_chapter_item"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:cardview_cat="http://schemas.android.com/apk/res-auto"
+    cardview_cat:cardCornerRadius="25dp"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/chapter_item_btn"
+            android:layout_width="150dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/style_ripple_btn_four_round"
+            android:text="Chapter 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            cardview_cat:layout_constraintBottom_toBottomOf="parent"
+            cardview_cat:layout_constraintEnd_toEndOf="parent"
+            cardview_cat:layout_constraintStart_toStartOf="parent"
+            cardview_cat:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

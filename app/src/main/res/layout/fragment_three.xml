@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/style_ripple_btn_ten_a" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical">
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_ripple_btn_twenty_a"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginVertical= "20dp"
+                        android:layout_marginTop="90dp"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="30dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/write_add_books"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:tint="@color/colorPrimaryDark"
+                                android:src="@drawable/ic_free_add_book" />
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/colorDeepGrayBlue"
+                                android:text="Add Books" />
+                        </LinearLayout>
+
+
+
+                            <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/write_add_chapter"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:src="@drawable/ic_baseline_add_chapter" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+
+                                android:text="Add Chapter" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="30dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/write_my_all_books"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:tint="@color/colorPrimaryDark"
+                                android:src="@drawable/ic_baseline_menu_my_allbooks" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorDeepGrayBlue"
+                                android:layout_gravity="center_horizontal"
+                                android:text="My Books" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:visibility="visible"
+                        android:orientation="vertical">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_discussion"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:visibility="visible"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_discus_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/style_ripple_btn_four_round"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_baseline_people_discuss" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:text="Write a Discussion..."
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="40dp"
+                        android:orientation="vertical">
+
+                        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                            android:id="@+id/youtube_player_view_write"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:enableLiveVideoUi="false"
+                            app:showFullScreenButton="false"
+                            app:showSeekBar="false"
+                            app:showYouTubeButton="false"
+                            app:useWebUi="false" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

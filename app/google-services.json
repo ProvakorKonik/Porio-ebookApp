@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "629580060321",
+    "firebase_url": "https://porio-69d75.firebaseio.com",
+    "project_id": "porio-69d75",
+    "storage_bucket": "porio-69d75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629580060321:android:235e7d4c1eeadb73b282e0",
+        "android_client_info": {
+          "package_name": "com.konik.porio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629580060321-dekiho16ncjiipsc66fptugjrrrk0e1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNECd1KnFjakzl2YGBX9OyG5eqK_190ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629580060321-dekiho16ncjiipsc66fptugjrrrk0e1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/cardview_latest_book"
+    android:clickable="true"
+
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    android:focusable="true">
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_width="130dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/latest_book_imgcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+
+            cardview:cardCornerRadius="6dp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" >
+
+
+            <ImageView
+                android:id="@+id/latest_book_img_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:background="#222d"
+                android:scaleType="centerCrop"
+                cardview:layout_constraintEnd_toEndOf="parent"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#4B0288D1"
+                android:layout_gravity="bottom" >
+
+            </LinearLayout>
+            <RatingBar
+                android:id="@+id/latest_book_rating"
+                style="@style/customRatingBar"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:theme="@style/RatingBar"
+                android:layout_marginBottom="10dp"
+                android:stepSize="0.5"
+                android:layout_gravity="bottom|center"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/latest_book_title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:text="Book Title"
+            android:textAlignment="center"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/latest_book_imgcard" />
+
+        <TextView
+            android:id="@+id/latest_book_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:text="Category"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/style_ripple_btn_five_round"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:textAlignment="center"
+            android:textColor="#2d2d2d"
+            android:textSize="10sp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/latest_book_author_name" />
+
+        <TextView
+            android:id="@+id/latest_book_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Author Name"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/latest_book_title_id" />
+
+        <TextView
+            android:id="@+id/latest_book_publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Publish On Feb 2020"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/latest_book_category" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashbaord"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_baseline_dashboard_24"/>
+    <item
+        android:id="@+id/category"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_menu_book_24"/>
+    <item
+        android:id="@+id/write"
+        android:title="Write"
+
+        android:icon="@drawable/ic_free_add_book"/>
+    <item
+        android:id="@+id/about"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+
+</menu>

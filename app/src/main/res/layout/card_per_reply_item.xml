@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+
+    android:id="@+id/cardview_per_reply"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginBottom="5dp"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/reply_user_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+
+            android:layout_marginStart="8dp"
+            android:background="#222d"
+            android:scaleType="centerCrop"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reply_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Provakor Das"
+            android:textSize="14sp"
+            cardview:layout_constraintStart_toStartOf="@+id/reply_text"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reply_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:paddingEnd="10dp"
+            android:text="reply text here"
+            android:textSize="13sp"
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_default="wrap"
+
+            cardview:layout_constraintStart_toEndOf="@+id/reply_user_image"
+            cardview:layout_constraintTop_toBottomOf="@+id/reply_user_name" />
+
+
+        <TextView
+            android:id="@+id/reply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="07/July/2020"
+            android:textSize="11sp"
+            cardview:layout_constraintStart_toStartOf="@+id/reply_text"
+            cardview:layout_constraintTop_toBottomOf="@+id/reply_text" />
+
+        <TextView
+            android:id="@+id/reply_like_txt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="LIKE"
+            android:textSize="11sp"
+            cardview:layout_constraintStart_toEndOf="@+id/reply_date"
+            cardview:layout_constraintTop_toTopOf="@+id/reply_date" />
+
+        <TextView
+            android:id="@+id/reply_reply_text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Reply"
+            android:textSize="11sp"
+            cardview:layout_constraintStart_toEndOf="@+id/reply_like_txt_btn"
+            cardview:layout_constraintTop_toTopOf="@+id/reply_like_txt_btn" />
+
+        <ImageView
+            android:id="@+id/reply_like_img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            cardview:layout_constraintEnd_toStartOf="@+id/reply_total_like"
+            cardview:layout_constraintTop_toTopOf="@+id/reply_total_like"
+            cardview:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+        <TextView
+            android:id="@+id/reply_total_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="15dp"
+            android:text="386"
+            android:textSize="12sp"
+
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/reply_text" />
+
+        <TextView
+            android:id="@+id/reply_view_more_reply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="View 20 more replies"
+            android:textSize="12sp"
+            android:visibility="gone"
+            cardview:layout_constraintStart_toStartOf="@+id/reply_date"
+            cardview:layout_constraintTop_toBottomOf="@+id/reply_date" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview_user_info"
+    android:layout_margin="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="@color/colorWhite"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/all_user_profile_pic_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:elevation="10dp"
+            cardview:cardCornerRadius="45dp"
+
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/all_user_profile_pic"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:background="@color/colorAccentLight"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/all_user_profile_btn"
+            android:layout_width="55dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/style_ripple_btn_gray"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:text=">"
+            android:textSize="12sp"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/all_user_rating_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:theme="@style/RatingBar"
+            android:tint="@color/YellowDark"
+            cardview:layout_constraintStart_toEndOf="@+id/all_user_profile_pic_card"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:srcCompat="@drawable/ic_baseline_star_24" />
+
+
+        <ImageView
+            android:id="@+id/all_user_eye_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:tint="@color/colorDeepGrayBlue"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintStart_toStartOf="@+id/all_user_active_time_text"
+            cardview:layout_constraintTop_toBottomOf="@+id/all_user_active_time_text"
+            cardview:srcCompat="@drawable/ic_baseline_eye_24" />
+
+        <TextView
+            android:id="@+id/all_user_active_time_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:rotationX="0"
+            android:text="Active 12 minutes ago"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif-black"
+            android:textSize="12sp"
+            android:textColor="@color/colorGray"
+            cardview:layout_constraintEnd_toStartOf="@+id/all_user_profile_btn"
+            cardview:layout_constraintStart_toStartOf="@+id/all_user_name"
+            cardview:layout_constraintTop_toBottomOf="@+id/all_user_name" />
+
+        <TextView
+            android:id="@+id/all_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-light"
+            android:lines="1"
+            android:text="Provakor Das"
+            android:textAlignment="textStart"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            cardview:layout_constraintEnd_toStartOf="@+id/all_user_profile_btn"
+            cardview:layout_constraintStart_toStartOf="@+id/all_user_rating_img"
+            cardview:layout_constraintTop_toBottomOf="@+id/all_user_rating_img" />
+
+        <TextView
+            android:id="@+id/all_user_rating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="4dp"
+            android:text="4.7"
+            android:textAlignment="center"
+            android:textColor="@color/YellowDark"
+            android:textSize="14sp"
+            cardview:layout_constraintBottom_toBottomOf="@+id/all_user_rating_img"
+            cardview:layout_constraintStart_toEndOf="@+id/all_user_rating_img"
+            cardview:layout_constraintTop_toTopOf="@+id/all_user_rating_img" />
+
+        <TextView
+            android:id="@+id/all_user_total_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="3400+"
+            android:textSize="10sp"
+            cardview:layout_constraintBottom_toBottomOf="@+id/all_user_eye_img"
+            cardview:layout_constraintStart_toEndOf="@+id/all_user_eye_img"
+            cardview:layout_constraintTop_toTopOf="@+id/all_user_eye_img" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

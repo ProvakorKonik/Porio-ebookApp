@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S_DocsBatchClassAdd">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD CLASS INFORMATION"
+                android:textSize="22dp"
+                android:layout_marginVertical="35dp"
+                android:layout_gravity="center_horizontal"/>
+            <EditText
+                android:id="@+id/edit_dbc_chapter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:hint="Class Topic/Chapter Name"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/edit_dbc_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:hint="Class NO"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/edit_dbc_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:hint="Class Date"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edit_dbc_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Info/Note"
+                android:layout_marginVertical="5dp"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/dbc_create_class_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Class"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/style_ripple_btn_one"
+                android:layout_gravity="center_horizontal"
+                android:paddingHorizontal="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

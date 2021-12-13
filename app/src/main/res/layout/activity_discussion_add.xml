@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiscussionAdd">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/discussion_head_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:text="Type your Discussion Topic Here:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/edit_discussion_text"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                android:paddingHorizontal="20dp"
+                android:ems="10"
+                android:hint="Ask Any Question"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:textColor="@color/colorPrimaryDarkDEEP"
+                android:paddingVertical="10dp"
+                android:background="@drawable/style_ripple_btn_four_round"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/discussion_submit_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="right"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/style_ripple_btn_one"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
