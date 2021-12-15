@@ -1,2 +1,16 @@
 # Porio-ebookApp
 Porio is a ebook and e-commerce related app
+![p1](https://user-images.githubusercontent.com/27727748/146199603-72991674-39f3-4de9-a157-8f73eeae30f4.png)
+![p2](https://user-images.githubusercontent.com/27727748/146199617-44b4763d-fd47-4ce6-becd-1a7df530d1d9.png)
+![p3](https://user-images.githubusercontent.com/27727748/146199621-c64b9d1b-c759-4be6-af78-f73017564554.png)
+![p4](https://user-images.githubusercontent.com/27727748/146199624-83e0cbe1-0587-48b5-bcb3-5045c7ea2e6c.png)
+![p5](https://user-images.githubusercontent.com/27727748/146199626-a7fd9ae9-6e57-47e5-a421-d5990936ff63.png)
+![p6](https://user-images.githubusercontent.com/27727748/146199630-45e400c5-760f-48c0-9e65-f23625f09906.png)
+![p7](https://user-images.githubusercontent.com/27727748/146199636-cad0832f-ec08-4dc4-baff-154a692c6618.png)
+![p8](https://user-images.githubusercontent.com/27727748/146199638-74ef1d8b-ff3a-49ba-aa9a-3ae096ffff5d.png)
+![p9](https://user-images.githubusercontent.com/27727748/146199641-fdd4cc89-34bc-4589-a114-6cc131f96453.png)
+![p10](https://user-images.githubusercontent.com/27727748/146199645-595e37d5-caaf-410d-85f5-7b463ef63f35.png)
+![p11](https://user-images.githubusercontent.com/27727748/146199646-fd1d5a04-0fff-4739-a100-62b6bee8258c.png)
+![p12](https://user-images.githubusercontent.com/27727748/146199651-58f2e7cb-bb9a-42e2-9736-cf75f62edfb9.png)
+![p13](https://user-images.githubusercontent.com/27727748/146199655-0f71e0e7-b37b-46af-beee-ecec1c6ca33c.png)
+![p14](https://user-images.githubusercontent.com/27727748/146199659-3f376eda-c754-45c3-b78d-29d8ce677d0e.png)
